@@ -214,25 +214,28 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
 }
 
-.servis-container {
+/* .servis-container {
     display: block;
     align-items: center;
     width: 1128px;
     height: 104px;
-
-}
+    max-width: 375px;
+} */
 
 .main-servis-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    gap: 72px;
 }
 
 .main-servis-item {
-    flex-basis: calc((100% - 72px) / 4);
+    /* flex-basis: calc((100% - 3*24px) / 4); */
+    width: 100%;
 }
 
 .icon {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     height: 112px;
@@ -240,16 +243,21 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
     border: 1px solid #8e8f99;
     width: 264px;
-    margin-bottom: 8px;
+    margin-bottom: 8px; */
+    display: none;
 }
 
 .subtitle-servis {
     margin-bottom: 8px;
-    font-weight: 500;
+    /* font-weight: 500;
 font-size: 20px;
-line-height: 1.2;
+line-height: 1.2; */
 letter-spacing: 0.02em;
 color: #2e2f42;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
 }
 
 .main-servis-text {
@@ -259,6 +267,8 @@ letter-spacing: 0.02em;
 color: #434455;
 width: 264px;
 height: 104px;
+
+font-weight: 500;
 }
 
 /* --------SECTION 3--------- */
@@ -818,4 +828,43 @@ color: #434455;
 .modal-submit-btn:hover,
 .modal-submit-btn:focus {
     background-color:#404bbf;
+}
+
+.container {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+    max-width: 768px;
+    }
+
+    .main-servis-list {
+        gap: 24px;
+    }
+
+    .main-servis-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 100%;
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-servis-item {
+        flex-basis: calc((100% - 3*24px) / 4);
+    }
+    
+    .main-servis-list {
+        gap: 24px;
+    }
 }
