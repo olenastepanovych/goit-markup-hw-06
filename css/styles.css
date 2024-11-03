@@ -76,7 +76,7 @@ button {
     }
 }
 
-  /* header */
+  /* -------------HEADER------------- */
 
 .header-page {
     border-bottom: 1px solid #e7e9fc;
@@ -1180,13 +1180,7 @@ margin-bottom: 8px;
     pointer-events: auto;
 }
 
-.burger:not(.is-open) {
-    transform: translate(-50%, -50%);
-    scale: 0.5;
-}
-
 .burger .modal-close-btn {
-    position: static;
     margin-bottom: 24px;
     margin-left: auto;
 }
@@ -1196,6 +1190,8 @@ margin-bottom: 8px;
     flex-direction: column;
     gap: 40px;
     margin-bottom: auto;
+    padding-top: 72px;
+    padding-bottom: 168px;
 }
 
 .burger-menu-link {
@@ -1215,6 +1211,7 @@ margin-bottom: 8px;
 .burger-address {
     margin-top: 48px;
     margin-bottom: 48px;
+    font-style: normal;
 }
 
 .burger-address-list {
@@ -1229,7 +1226,6 @@ margin-bottom: 8px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
-    font-style: normal;
 }
 
 .burger-address-link:hover,
